@@ -1,7 +1,7 @@
 ---
 import { CollectionEntry, getCollection } from "astro:content";
 import { CSProjectSchema } from "../../content/config";
-import PostLayout from "../../layouts/PostLayout.astro";
+import CSProjectLayout from "../../layouts/CSProjectLayout.astro";
 
 export async function getStaticPaths() {
   const postEntries = await getCollection("cs-projects");
@@ -20,7 +20,7 @@ const post: CSProjectSchema = entry.data;
 const { Content } = await entry.render();
 ---
 
-<PostLayout
+<CSProjectLayout
   title={post.title}
   description={post.description}
   pubDate={post.pubDate}
@@ -30,4 +30,4 @@ const { Content } = await entry.render();
   tags={post.tags}
 >
   <Content />
-</PostLayout>
+</CSProjectLayout>
