@@ -1,11 +1,10 @@
 ---
-id: "aeroproj3"
-title: "Demo Post 3"
+id: "aeroproj1"
+title: "Using the Method of Characteristics to Design a 2D Nozzle"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 12 2022"
+pubDate: "2022-09-10"
 heroImage: "/post_img.webp"
-badge: "Demo badge"
-tags: ["rust","tokio"]
+tags: ["tokio"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
