@@ -2,7 +2,7 @@ import rss from "@astrojs/rss";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import { getCollection } from "astro:content";
 
-export async function get(context) {
+export async function getAero(context) {
   const aerospaceProjects = await getCollection("aerospace-projects");
   return rss({
     title: SITE_TITLE,
@@ -17,7 +17,7 @@ export async function get(context) {
   });
 }
 
-export async function get(context) {
+export async function getCS(context) {
   const csProjects = await getCollection("cs-projects");
   return rss({
     title: SITE_TITLE,
