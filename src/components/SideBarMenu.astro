@@ -5,8 +5,9 @@ const { sideBarActiveItemID } = Astro.props;
 const activeClass = "bg-base-300"; // For primary color, replace with `active` class
 
 // Fetch aerospace projects
-const aeroProjects = (await getCollection("aerospace-projects")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-const csProjects = (await getCollection("cs-projects")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const aeroProjects = (await getCollection("aerospace-projects")).sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
+// Fetch cs projects
+const csProjects = (await getCollection("cs-projects")).sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
 ---
 
 
@@ -18,7 +19,7 @@ const csProjects = (await getCollection("cs-projects")).sort((a, b) => b.data.pu
             <ul>
                 {
                     aeroProjects.map((proj) => (
-                        <li><a class="py-3 text-base" id={proj.data.id} href={"/aerospace-projects/" + proj.slug}>
+                        <li><a class="py-3 text-base" id={proj.id} href={"/aerospace-projects/" + proj.slug}>
                             {proj.data.title}
                         </a></li>
                     ))

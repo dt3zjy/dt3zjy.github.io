@@ -1,7 +1,8 @@
 ---
-title: "Demo Post 3"
+id: "aeroproj3"
+title: "Capstone Project: Solid Propulsion Motor"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 12 2022"
+pubDate: "2024-05-31"
 heroImage: "/post_img.webp"
 badge: "Demo badge"
 tags: ["rust","tokio"]

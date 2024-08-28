@@ -1,8 +1,8 @@
 ---
-id: "aeroproj3"
-title: "Demo Post 3"
+id: "csproj3"
+title: "Exploring the Growth of the Space Industry"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 12 2022"
+pubDate: "2021-12-02"
 heroImage: "/post_img.webp"
 badge: "Demo badge"
 tags: ["rust","tokio"]

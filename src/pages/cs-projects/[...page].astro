@@ -4,24 +4,24 @@ import HorizontalCard from "../../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths({ paginate }) {
-  const posts = await getCollection("blog");
-  posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  const posts = await getCollection("cs-projects");
+  posts.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
   return paginate(posts, { pageSize: 10 });
 }
 
 const { page } = Astro.props;
 ---
 
-<BaseLayout title="Blog" sideBarActiveItemID="blog">
+<BaseLayout title="CS" sideBarActiveItemID="cs-projects">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Blog</div>
+    <div class="text-3xl w-full font-bold">CS & Data Science Projects</div>
   </div>
 
   {
     page.data.length === 0 ? (
       <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
         <p class="font-bold">Sorry!</p>
-        <p>There are no blog posts to show at the moment. Check back later!</p>
+        <p>There are no CS or data science projects to show at the moment. Check back later!</p>
       </div>
     ) : (
       <ul>
@@ -31,7 +31,7 @@ const { page } = Astro.props;
               title={post.data.title}
               img={post.data.heroImage}
               desc={post.data.description}
-              url={"/blog/" + post.slug}
+              url={"/cs-projects/" + post.slug}
               target="_self"
               badge={post.data.badge}
               tags={post.data.tags}

@@ -1,7 +1,8 @@
 ---
-title: "Demo Post 2"
+id: "csproj1"
+title: "Node: A Data Science Course"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 11 2022"
+pubDate: "2023-05-31"
 heroImage: "/post_img.webp"
 ---
 
