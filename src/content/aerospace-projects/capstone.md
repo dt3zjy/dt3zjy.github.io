@@ -1,7 +1,7 @@
 ---
 id: "aeroproj3"
 title: "Capstone Project: Solid Propulsion Motor"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+description: "For my senior design capstone project, I was the Propulsion Lead for the design, analysis, and manufacturing of a solid propulsion motor."
 pubDate: "2024-05-31"
 heroImage: "/post_img.webp"
 badge: "Demo badge"
