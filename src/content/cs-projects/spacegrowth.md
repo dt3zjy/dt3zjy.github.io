@@ -17,4 +17,4 @@ The findings of this project are documented in detail in the attached files, whe
 <iframe src="/cs-proj/env-research-paper.pdf" width="100%" height="600"></iframe>
 
 **Project Code with Interactive Visualizations**
-<embed type="text/html" src="/cs-proj/space-mission-analysis.html" width="100%" height="600">
+<iframe src="/cs-proj/space-mission-analysis.html" width="100%" height="600"></iframe>
