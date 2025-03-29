@@ -4,8 +4,7 @@ title: "Capstone Project: Solid Propulsion Motor"
 description: "For my senior design capstone project, I was the Propulsion Lead for the design, analysis, and manufacturing of a solid propulsion motor."
 pubDate: "2024-05-31"
 heroImage: "/post_img.webp"
-badge: "Demo badge"
-tags: ["rust","tokio"]
+tags: ["OpenMotor","Propulsion"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

@@ -1,10 +1,10 @@
 ---
 id: "aeroproj1"
 title: "Using the Method of Characteristics to Design a 2D Nozzle"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+description: "I created an object-oriented MATLAB tool that plots the X/Y coordinates of an ideal minimum-length nozzle given certain design characteristics."
 pubDate: "2024-08-28"
 heroImage: "/post_img.webp"
-tags: ["tokio"]
+tags: ["MATLAB", "Fluid Dynamics", "Propulsion"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

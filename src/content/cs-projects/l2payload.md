@@ -1,10 +1,10 @@
 ---
 id: "csproj2"
 title: "Electronic Payload for High-Powered Rocket"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+description: "I am creating an electronic payload for my Tripoli Level 2 Certification rocket to measure atmospheric conditions."
 pubDate: "2023-01-01"
 heroImage: "/post_img.webp"
-tags: ["tokio"]
+tags: ["C++", "Sensor Integration", "Arduino"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
