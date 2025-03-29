@@ -13,5 +13,8 @@ To achieve this, I utilized **Python** for data processing and analysis, leverag
 
 The findings of this project are documented in detail in the attached files, where you can explore both the research paper and an interactive analysis of space missions. Feel free to interact with the embedded files below to dive deeper into the data and insights.
 
-<embed type="text/html" src="/cs-proj/space-mission-analysis.html" width="800" height="600">
+**Research Paper**
 <iframe src="/cs-proj/env-research-paper.pdf" width="100%" height="600"></iframe>
+
+**Project Code with Interactive Visualizations**
+<embed type="text/html" src="/cs-proj/space-mission-analysis.html" width="100%" height="600">
