@@ -2,7 +2,7 @@
 
 ![Welcome to my Website!](public/social_img.png)
 
-I used Astrofy, a free and open-source template, as a skeleton for this website. I used Astro and TailwindCSS to create and populate all of the pages on the website. I hosted the website on my own domain which I got through Google Domains. for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with a Blog, CV, Project Section, Store, and RSS Feed.
+I used Astrofy, a free and open-source template, as a skeleton for this website. I used Astro and TailwindCSS to create and populate all of the pages on the website. I hosted the website on my own domain which I got through Google Domains. 
 
 ## Demo
 I used Astrofy, a free and open-source template, as a skeleton for this website. I used Astro and TailwindCSS to create and populate all of the pages on the website. I hosted the website on my own domain which I got through Google Domains. 
