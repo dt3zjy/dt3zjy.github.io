@@ -1,57 +1,14 @@
 ---
 id: "csproj2"
-title: "Electronic Payload for High-Powered Rocket"
+title: "Electronic Payload for Yultuz"
 description: "I am creating an electronic payload for my Tripoli Level 2 Certification rocket to measure atmospheric conditions."
 pubDate: "2023-01-01"
-heroImage: "/post_img.webp"
+heroImage: "/aero-proj/yultuz.png"
 tags: ["C++", "Sensor Integration", "Arduino"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer
-malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas
-pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse
-platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
-fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst
-quisque sagittis purus sit amet.
+I am creating an **Electronic Payload** for my Level 2 Tripoli Certification Rocket called *Yultuz* to collect real-time atmospheric data during flight. The payload will process and transmit data from sensors (altimeter, pressure sensor, temperature sensors) to a ground station using a microcontroller (Arduino) and an RF communication module while also storing the data locally in the payload. The project focuses on tracking variations in atmospheric pressure and temperature against altitude, comparing the results with standard atmospheric models. Through data collection and analysis, this project enhances my understanding of atmospheric dynamics while refining engineering and data acquisition skills.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum
-quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet.
-Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus.
-Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit
-ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt
-dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus
-arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed
-tempus urna et pharetra pharetra massa massa ultricies mi.
+Currently, the project is in the research and planning phase, with hardware and software components already selected. For the payload, I chose the **Arduino Nano 33 BLE Sense** for its built-in pressure and temperature sensors, while an **Arduino UNO R4 Minima** will be used for the ground station. I will also use two **RRC3+ Altimeters** from Missile Works as altimeters and as dual deployment devices for the rocket. Two were chosen to add a level of redundancy in case one altimeter fails because the deployment phase is critical for mission success. I will be using **XBee** communication systems to transfer data from the payload to the ground station in real time. Other critical components, including micro-SD storage, antennas, and power management systems, have been selected. On the software side, development tools such as the **Arduino IDE, MATLAB, and Python** will be used for data processing and visualization, while **Altium Designer** is being used to develop circuit diagrams for the payload. The next steps involve assembling and integrating the hardware, coding for data acquisition and transmission, and conducting preliminary ground tests before full-scale rocket launches. At the moment, *I do not have the funds* necessary to purchase the components for assembly.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam
-sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec.
-Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna
-fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et
-egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel
-turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra
-nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim
-praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus
-egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam
-ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor
-purus non. Amet dictum sit amet justo donec enim.
-
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut
-consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra.
-Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor
-dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor
-dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque
-eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices
-tincidunt arcu. Id cursus metus aliquam eleifend mi.
-
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus
-imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu
-cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt
-dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat
-sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
-Egestas integer eget aliquet nibh praesent tristique magna.
+[Click here](https://www.danieltohti.com/aerospace-projects/l2cert/) for a link to the mechanical/physical side of the project, which is the **design, analysis, manufacturing, and testing** of the certification rocket that will be flying the payload.

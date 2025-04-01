@@ -3,16 +3,24 @@ id: "csproj1"
 title: "Node: A Data Science Course"
 description: "I designed and led a course in Data Science & Machine Learning for a non-profit tailored towards university-level students."
 pubDate: "2023-05-31"
-heroImage: "/post_img.webp"
+heroImage: "/cs-proj/node-hero-img.png"
 tags: ["Python", "Data Analysis", "Machine Learning"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+**[Forge Academy](https://joinforge.co)** is a non-profit school that provides students with the skills and opportunities to thrive in their early careers. They teach several different courses in relevant areas that is constantly updating based on the market's needs.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+I got introduced to Forge when I first did their **Launch** program, which pairs up hard-working students with companies for a summer internship. I took their Data Science course and landed an internship as a Data Analyst during my freshmen year of college. Afterwards, I became a teaching assistant for their **Node** course to help with teaching data science skills in **Python**. After one semester, I ended up taking over the teaching role and led a few teaching assistants for several semesters. In total, I taught **data cleaning, data analysis, data visualization, and machine learning algorithms** to over 60+ students while emphasizing the importance of data ethics throughout the course.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+I hosted the whole course on **Github** and an online website for easy access to course materials, utilizing my skills in **Git and domain hosting**. The specific packages I focused on during the course were **pandas, numpy, plotly express, and scikit-learn**. Eventually, I trained a teaching assistant to take over my teaching role as I took up leadership roles in other extracurriculars I was involved in. Please feel free to explore the specific lessons I taught with the following link to the Github page: [Node: A Data Science Course](https://github.com/dt3zjy/node/tree/master)
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+Below are screenshots of some of the lessons:
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+### Geographic Plot of Seattle Rentals (Week 4 Lesson)
+This is a Plotly Express data visualization of different rentals in Seattle using AirBNB and Zillow. The color represents the neighborhood group and the size of each point represents the relative price of the rental. The plot is interactive within the lesson itself for easy searching and comparisons.
+
+[ ![](/cs-proj/seattle-rentals.png) ](/cs-proj/seattle-rentals.png)
+
+### Decision Tree Metrics (Week 7 Lesson)
+I introduced the decision tree machine learning algorithm with this simple example on whether or not Spikeball should be played on a given day. This shows what's happening under the hood and how the machine learning algorithm makes its decisions.
+
+[ ![](/cs-proj/dt.png) ](/cs-proj/dt.png)
