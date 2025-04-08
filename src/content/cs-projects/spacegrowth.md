@@ -6,9 +6,7 @@ pubDate: "2021-12-02"
 tags: ["Data Analysis", "Python"]
 ---
 
-For this project, I conducted an in-depth analysis of space missions using programming skills and data visualization techniques.
- The motivation behind this research was to explore trends in space exploration in an environmental lense to see the effects the
- space industry has on Earth. 
+For this project, I conducted an in-depth analysis of space missions using programming skills and data visualization techniques. The motivation behind this research was to explore trends in space exploration in an environmental lense to see the effects the space industry has on Earth. 
 
 To achieve this, I utilized **Python** for data processing and analysis, leveraging libraries such as **Pandas** for 
 data manipulation and **Plotly Express** for interactive visualizations. The research involved collecting historical 
@@ -21,6 +19,7 @@ paper and an interactive analysis of space missions. Feel free to interact with 
 into the data and insights.
 
 ### Research Paper
+
 <iframe src="/cs-proj/env-research-paper.pdf" width="100%" height="600"></iframe>
 
 ### Project Code with Interactive Visualizations

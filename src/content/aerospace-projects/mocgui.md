@@ -7,51 +7,43 @@ heroImage: "/post_img.webp"
 tags: ["MATLAB", "Fluid Dynamics", "Propulsion"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer
-malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas
-pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse
-platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
-fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst
-quisque sagittis purus sit amet.
+### Project Overview  
+I developed a MATLAB-based software tool that utilizes **Object-Oriented Programming** to design an optimal **2D supersonic nozzle**. The tool is built around the **Method of Characteristics (MoC)**, a technique that transforms complex **partial differential equations (PDEs)** governing supersonic, steady, irrotational, inviscid, and isentropic flows into a system of **ordinary differential equations (ODEs)**. By leveraging the hyperbolic nature of the governing equations, my tool systematically traces **Mach waves** starting from the nozzle throat, calculating characteristic points along the flow path. These characteristic lines define regions of continuous flow properties, allowing for precise nozzle contouring that eliminates shocks and ensures efficient expansion to the desired **design altitude**. Additionally, **Prandtl-Meyer expansion theory** is incorporated to compute flow properties at each characteristic intersection, optimizing the nozzle shape for maximum performance.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum
-quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet.
-Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus.
-Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit
-ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt
-dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus
-arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed
-tempus urna et pharetra pharetra massa massa ultricies mi.
+### Key Design Features and Methodology  
+- **Supersonic, Steady, Irrotational, Inviscid, Isentropic Flow**  
+  The tool models the flow conditions of the nozzle based on these fundamental assumptions to ensure accurate supersonic flow analysis.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam
-sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec.
-Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna
-fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et
-egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel
-turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra
-nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim
-praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus
-egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam
-ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor
-purus non. Amet dictum sit amet justo donec enim.
+- **Perfect Nozzle (Axisymmetric)**  
+  The design assumes an axisymmetric nozzle, ensuring consistent flow expansion and contraction.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut
-consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra.
-Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor
-dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor
-dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque
-eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices
-tincidunt arcu. Id cursus metus aliquam eleifend mi.
+- **Mach Waves and Characteristic Points**  
+  The tool plots Mach waves starting from the throat, using the kickoff angle to calculate characteristic points along the nozzle flow path.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus
-imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu
-cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt
-dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat
-sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
-Egestas integer eget aliquet nibh praesent tristique magna.
+- **Shock-Free Flow Design**  
+  The nozzle shape is optimized by determining the angle required to create a shock-free flow.
+
+- **Prandtl-Meyer Expansion Theory**  
+  The Prandtl-Meyer equation is used to compute flow properties at each characteristic intersection.
+
+### Technical Implementation  
+I applied and honed my skills in **MATLAB programming** to streamline computations for scalability and ease of use. The project involved:
+
+- Implementing **numerical solvers** to solve the system of ODEs governing the flow.
+- Creating **visualization tools** to plot characteristic lines and nozzle contours, offering clear graphical representations of flow properties and nozzle design.
+- Designing an **interactive GUI** that allows users to input flow conditions and automatically generate nozzle profiles.
+
+Below, I have some screenshots of the tool, and feel free to click on the images to make them bigger:
+
+<p style="text-align:center;"><b>MATLAB GUI</b></p>
+
+The user will input the engine characteristics on the left along with the number of lines to use for the simulation. The right shows all of the results, along with options to export the points (useful for CAD and/or CFD modeling) or to plot it in MATLAB.
+[ ![](/aero-proj/moc-gui.png) ](/aero-proj/moc-gui.png)
+
+<p style="text-align:center;"><b>Characteristic Point Plot</b></p>
+
+Here is a plot with the red points showing the wall of the nozzle, the blue points showing the intersections of the characteristic lines, and the yellow points highlighting the centerline of the nozzle.
+[ ![](/aero-proj/moc-plot.png) ](/aero-proj/moc-plot.png)
+
+### Next Steps: CFD Analysis
+Next, I plan on exporting the plotted points into ANSYS Fluent to do CFD Analysis. Stay tuned for an update!
