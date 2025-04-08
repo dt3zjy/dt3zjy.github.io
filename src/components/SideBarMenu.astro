@@ -5,9 +5,23 @@ const { sideBarActiveItemID } = Astro.props;
 const activeClass = "bg-base-300"; // For primary color, replace with `active` class
 
 // Fetch aerospace projects
-const aeroProjects = (await getCollection("aerospace-projects")).sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
+const aeroProjects = (await getCollection("aerospace-projects")).sort((a, b) => {
+  // Parse the updatedDate first; if it's empty, fallback to pubDate
+  const updatedA = a.data.updatedDate ? new Date(a.data.updatedDate) : new Date(a.data.pubDate);
+  const updatedB = b.data.updatedDate ? new Date(b.data.updatedDate) : new Date(b.data.pubDate);
+
+  // Sort by updatedDate or pubDate if updatedDate is empty
+  return updatedB - updatedA;
+});
 // Fetch cs projects
-const csProjects = (await getCollection("cs-projects")).sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
+const csProjects = (await getCollection("cs-projects")).sort((a, b) => {
+  // Parse the updatedDate first; if it's empty, fallback to pubDate
+  const updatedA = a.data.updatedDate ? new Date(a.data.updatedDate) : new Date(a.data.pubDate);
+  const updatedB = b.data.updatedDate ? new Date(b.data.updatedDate) : new Date(b.data.pubDate);
+
+  // Sort by updatedDate or pubDate if updatedDate is empty
+  return updatedB - updatedA;
+});
 ---
 
 

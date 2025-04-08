@@ -3,13 +3,28 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 
-const aeroProjects = (await getCollection("aerospace-projects")).sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
+// Sorting aerospace projects
+const aeroProjects = (await getCollection("aerospace-projects")).sort((a, b) => {
+  // Parse the updatedDate first; if it's empty, fallback to pubDate
+  const updatedA = a.data.updatedDate ? new Date(a.data.updatedDate) : new Date(a.data.pubDate);
+  const updatedB = b.data.updatedDate ? new Date(b.data.updatedDate) : new Date(b.data.pubDate);
 
-const last_aero_posts = aeroProjects.slice(0, 3);
+  // Sort by updatedDate or pubDate if updatedDate is empty
+  return updatedB - updatedA;
+});
 
-const csProjects = (await getCollection("cs-projects")).sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
+const last_aero_posts = aeroProjects.slice(0, 1);
 
-const last_cs_posts = csProjects.slice(0, 3);
+const csProjects = (await getCollection("cs-projects")).sort((a, b) => {
+  // Parse the updatedDate first; if it's empty, fallback to pubDate
+  const updatedA = a.data.updatedDate ? new Date(a.data.updatedDate) : new Date(a.data.pubDate);
+  const updatedB = b.data.updatedDate ? new Date(b.data.updatedDate) : new Date(b.data.pubDate);
+
+  // Sort by updatedDate or pubDate if updatedDate is empty
+  return updatedB - updatedA;
+});
+
+const last_cs_posts = csProjects.slice(0, 1);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -37,7 +52,7 @@ const last_cs_posts = csProjects.slice(0, 3);
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">Latest Aerospace Engineering Projects</div>
+    <div class="text-3xl w-full font-bold mb-2">Latest Aerospace Engineering Project</div>
   </div>
 
   {
@@ -57,7 +72,7 @@ const last_cs_posts = csProjects.slice(0, 3);
   }
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest Software/Hardware Projects</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest Software/Hardware Project</div>
   </div>
 
   {
