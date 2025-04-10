@@ -1,9 +1,8 @@
 ---
 id: "aeroproj2"
-title: "Tripoli L2 Certification Rocket"
+title: "Yultuz: A Tripoli L2 Certification Rocket"
 description: "After completing my Tripoli Level 1 Certification, I am now working on a Level 2 rocket with dual deployment and an electronic payload to measure atmospheric conditions."
 pubDate: "2023-01-01"
-heroImage: "/post_img.webp"
 tags: ["CAD", "OpenRocket", "Propulsion"]
 ---
 
